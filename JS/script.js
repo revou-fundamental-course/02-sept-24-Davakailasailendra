@@ -17,7 +17,7 @@ function hitungKelilingSegitiga() {
     const s2 = document.getElementById('sisi2').value;
     const s3 = document.getElementById('sisi3').value;
 
-    if (!sisi1 || !sisi2 || !sisi3) {
+    if (!s1 || !s2 || !s3) {
         alert("Tolong masukkan nomor untuk Sisi");
         return;
     }
@@ -45,7 +45,7 @@ function hitungKelilingJajargenjang() {
     const alas = document.getElementById('alas-jajargenjang-keliling').value;
     const sisiMiring = document.getElementById('sisi-miring').value;
 
-    if (!sisi1 || !sisi2 || !sisi3) {
+    if (!alas || !sisiMiring ) {
         alert("Tolong masukkan nomor untuk Alas dan Sisi miring");
         return;
     }
