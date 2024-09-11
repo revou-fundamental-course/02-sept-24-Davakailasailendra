@@ -38,7 +38,7 @@ body{
     justify-content: center;
 }
 
-/* Styling tombol pilihan dengan padding, border, dan hover effect */
+/* Styling tombol pilihan dengan padding, border, dan hover */
 .selection-btn {
     padding: 15px 30px;
     cursor: pointer;

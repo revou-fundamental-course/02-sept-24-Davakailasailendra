@@ -5,7 +5,7 @@ function hitungLuasSegitiga() {
 
 // Memberikan tanda jika salah satu input kosong
     if (!alas || !tinggi) {
-        alert("Tolong masukkan nomor untuk Alas dan Tinggi.");
+        alert("Tolong lengkapi input yang tersedia.");
         return;
     }
 
@@ -25,7 +25,7 @@ function hitungKelilingSegitiga() {
 
 // Memberikan tanda jika salah satu input kosong
     if (!s1 || !s2 || !s3) {
-        alert("Tolong masukkan nomor untuk Sisi");
+        alert("Tolong lengkapi input yang tersedia.");
         return;
     }
 
@@ -44,7 +44,7 @@ function hitungLuasJajargenjang() {
 
 // Memberikan tanda jika salah satu input kosong
     if (!alas || !tinggi) {
-        alert("Tolong masukkan nomor untuk Alas dan Tinggi.");
+        alert("Tolong lengkapi input yang tersedia.");
         return;
     }
 
@@ -63,7 +63,7 @@ function hitungKelilingJajargenjang() {
 
 // Memberikan tanda jika salah satu input kosong
     if (!alas || !sisiMiring ) {
-        alert("Tolong masukkan nomor untuk Panjang alas dan Sisi miring");
+        alert("Tolong lengkapi input yang tersedia.");
         return;
     }
 
