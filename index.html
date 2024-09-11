@@ -7,24 +7,31 @@
     <title>Tugas Revou</title>
 </head>
 <body>
+    <!-- Bagian Header: Judul dan Deskripsi -->
     <header class="main-header">
         <h1>Welcome To Katik</h1>
         <p>Hai Sobat, Selamat Datang di Katik <br>
         Tempat dimana kita dapat menghitung Keliling dan Luas dari Segitiga dan Jajargenjang.<br>
         </p>
     </header>
+
+    <!-- Bagian Main: Konten utama website -->
     <main>
+        <!-- Section untuk pemilihan segitiga atau jajar genjang -->
         <section class="selection-content">
             <a href="#segitiga" type="button" class="selection-btn">Segitiga</a>
             <a href="#jajargenjang" type="button" class="selection-btn">Jajar Genjang</a>
         </section>
     
+        <!-- Section Segitiga: Berisi perhitungan luas dan keliling segitiga -->
         <section id="segitiga" class="main-content">
+            <!-- Aside pertama: Luas segitiga -->
             <aside class="aside-content">
                 <header class="secondary-header">
                     <h1 class="secondary-h1">Luas Segitiga</h1>
                 </header>
     
+                <!-- Menampilkan rumus dan gambar untuk menghitung luas segitiga -->
                 <article class="luas-segitiga-content">
                     <img src="https://akupintar.id/documents/20143/0/VII-68.PNG/1a4df8a0-4c26-b408-96d4-4cdc886355e0?t=1542968948773https://akupintar.id/documents/20143/0/VII-68.PNG/1a4df8a0-4c26-b408-96d4-4cdc886355e0?t=1542968948773" alt="Luas Segitiga" class="luas-segitiga-img">
                     <p>Rumus Luas Segitiga :<br/></p>
@@ -35,23 +42,30 @@
                     t : Tinggi <br><br>
                     </p>
                 </article>
+
+                <!-- Form untuk menghitung luas segitiga -->
                 <hr/>
                 <form>
                     <header>
                         <h1 class="luas-segitiga-form-header">Hitung Luas Segitiga</h1>
                     </header>
     
+                    <!-- Input alas segitiga -->
                     <div class="input-wrapper">
                         <label for="alas-segitiga">Panjang Alas :</label>
                         <input id="alas-segitiga" type="number" placeholder="Masukkan Angka"/>
                     </div>
     
+                    <!-- Input tinggi segitiga -->
                     <div class="input-wrapper">
                         <label for="tinggi-segitiga">Tinggi :</label>
                         <input id="tinggi-segitiga" type="number" placeholder="Masukkan Angka"/>
                     </div>
     
+                    <!-- Menampilkan hasil perhitungan luas segitiga -->
                     <p id="result-luas-segitiga" class="result hasil-menghitung">Hasil Penghitungan :</p>
+
+                    <!-- Tombol hitung dan reset -->
                     <div class="button-container">
                         <button type="button" onclick="hitungLuasSegitiga()">Hitung</button>
                         <button type="button" onclick="resetLuasSegitiga()">Reset</button>
@@ -59,11 +73,13 @@
                 </form>
             </aside>
     
+            <!-- Aside kedua: Keliling segitiga -->
             <aside class="aside-content">
                 <header class="secondary-header">
                     <h1 class="secondary-h1">Keliling Segitiga</h1>
                 </header>
     
+                <!-- Menampilkan rumus keliling segitiga -->
                 <article class="luas-segitiga-content">
                     <img src="https://akupintar.id/documents/20143/0/VII-68.PNG/1a4df8a0-4c26-b408-96d4-4cdc886355e0?t=1542968948773https://akupintar.id/documents/20143/0/VII-68.PNG/1a4df8a0-4c26-b408-96d4-4cdc886355e0?t=1542968948773" alt="Luas Segitiga" class="luas-segitiga-img">
                     <p>Rumus Keliling Segitiga :<br/></p>
@@ -76,13 +92,14 @@
                     </p>
                 </article>
     
+                <!-- Form untuk menghitung keliling segitiga -->
                 <hr/>
-    
                 <form>
                     <header>
                         <h1 class="luas-segitiga-form-header">Hitung Keliling Segitiga</h1>
                     </header>
     
+                    <!-- Input untuk masing-masing sisi segitiga -->
                     <div class="input-wrapper">
                         <label for="sisi1">Sisi 1 :</label>
                         <input id="sisi1" type="number" placeholder="Masukkan Angka"/>
@@ -98,7 +115,10 @@
                         <input id="sisi3" type="number" placeholder="Masukkan Angka"/>
                     </div>
     
+                    <!-- Menampilkan hasil perhitungan keliling segitiga -->
                     <p id="result-keliling-segitiga" class="result">Hasil Penghitungan :</p>
+
+                    <!-- Tombol hitung dan reset -->
                     <div class="button-container">
                         <button type="button" onclick="hitungKelilingSegitiga()">Hitung</button>
                         <button type="button" onclick="resetKelilingSegitiga()">Reset</button>
@@ -107,12 +127,14 @@
             </aside>
         </section>
     
+        <!-- Section Jajar Genjang: Perhitungan luas dan keliling jajargenjang (mirip dengan segitiga) -->
         <section id="jajargenjang" class="main-content">
             <aside class="aside-content">
                 <header class="secondary-header">
                     <h1 class="secondary-h1">Luas Jajargenjang</h1>
                 </header>
     
+                <!-- Menampilkan rumus dan gambar untuk menghitung luas Jajargenjang -->
                 <article class="luas-segitiga-content">
                     <img src="https://uptdsmpn3bangkalan.sch.id/wp-content/uploads/2024/01/jajar-genjang.webp" alt="Luas Segitiga" class="luas-segitiga-img">
                     <p>Rumus Luas Jajargenjang : </p>
@@ -123,23 +145,29 @@
                     t : Tinggi </p>
                 </article>
     
+                <!-- Form untuk menghitung luas Jajargenjang -->
                 <hr/>
                 <form>
                     <header>
                         <h1 class="luas-segitiga-form-header">Hitung Luas Jajargenjang</h1>
                     </header>
     
+                    <!-- Input alas Jajargenjang -->
                     <div class="input-wrapper">
                         <label for="alas-jajargenjang">Panjang Alas :</label>
                         <input id="alas-jajargenjang" type="number" placeholder="Masukkan Angka"/>
                     </div>
     
+                    <!-- Input tinggi Jajargenjang -->
                     <div class="input-wrapper">
                         <label for="tinggi-jajargenjang">Tinggi :</label>
                         <input id="tinggi-jajargenjang" type="number" placeholder="Masukkan Angka"/>
                     </div>
     
+                    <!-- Menampilkan hasil perhitungan luas Jajargenjang -->
                     <p id="result-luas-jajargenjang" class="result">Hasil Penghitungan :</p>
+
+                    <!-- Tombol hitung dan reset -->
                     <div class="button-container">
                         <button type="button" onclick="hitungLuasJajargenjang()">Hitung</button>
                         <button type="button" onclick="resetLuasJajargenjang()">Reset</button>
@@ -147,11 +175,13 @@
                 </form>
             </aside>
     
+            <!-- Aside kedua: Keliling Jajargenjang -->
             <aside class="aside-content">
                 <header class="secondary-header">
                     <h1 class="secondary-h1">Keliling Jajargenjang</h1>
                 </header>
     
+                <!-- Menampilkan rumus keliling Jajargenjang -->
                 <article class="luas-segitiga-content">
                     <img src="https://uptdsmpn3bangkalan.sch.id/wp-content/uploads/2024/01/jajar-genjang.webp" alt="Luas Segitiga" class="luas-segitiga-img">
                     <p>Rumus Keliling Jajargenjang :<br/></p>
@@ -162,6 +192,7 @@
                     b : Sisi Miring </p>
                 </article>
     
+                <!-- Form untuk menghitung keliling Jajargenjang -->
                 <hr/>
     
                 <form>
@@ -169,17 +200,22 @@
                         <h1 class="luas-segitiga-form-header">Hitung Keliling Jajargenjang</h1>
                     </header>
     
+                    <!-- Input untuk masing-masing alas Jajargenjang -->
                     <div class="input-wrapper">
                         <label for="alas-jajargenjang-keliling">Panjang Alas :</label>
                         <input id="alas-jajargenjang-keliling" type="number" placeholder="Masukkan Angka"/>
                     </div>
     
+                    <!-- Input untuk masing-masing sisi miring Jajargenjang -->
                     <div class="input-wrapper">
                         <label for="sisi-miring">Sisi Miring :</label>
                         <input id="sisi-miring" type="number" placeholder="Masukkan Angka"/>
                     </div>
     
+                    <!-- Menampilkan hasil perhitungan keliling Jajargenjang -->
                     <p id="result-keliling-jajargenjang" class="result">Hasil Penghitungan :</p>
+
+                    <!-- Tombol hitung dan reset -->
                     <div class="button-container">
                         <button type="button" onclick="hitungKelilingJajargenjang()">Hitung</button>
                         <button type="button" onclick="resetKelilingJajargenjang()">Reset</button>
