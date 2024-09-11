@@ -18,7 +18,7 @@ function hitungKelilingSegitiga() {
     const s3 = document.getElementById('sisi3').value;
 
     if (!sisi1 || !sisi2 || !sisi3) {
-        alert("Tolong masukkan nomor untuk Alas dan Tinggi.");
+        alert("Tolong masukkan nomor untuk Sisi");
         return;
     }
 
@@ -44,6 +44,12 @@ function hitungLuasJajargenjang() {
 function hitungKelilingJajargenjang() {
     const alas = document.getElementById('alas-jajargenjang-keliling').value;
     const sisiMiring = document.getElementById('sisi-miring').value;
+
+    if (!sisi1 || !sisi2 || !sisi3) {
+        alert("Tolong masukkan nomor untuk Alas dan Sisi miring");
+        return;
+    }
+
     const keliling = 2 * (parseFloat(alas) + parseFloat(sisiMiring));
     const langkah = `K = 2 x (${alas} + ${sisiMiring}) = ${keliling}`;
     document.getElementById('result-keliling-jajargenjang').innerText = `Hasil: ${keliling} \nCara: ${langkah}`;
