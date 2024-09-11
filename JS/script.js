@@ -63,7 +63,7 @@ function hitungKelilingJajargenjang() {
 
 // Memberikan tanda jika salah satu input kosong
     if (!alas || !sisiMiring ) {
-        alert("Tolong masukkan nomor untuk Alas dan Sisi miring");
+        alert("Tolong masukkan nomor untuk Panjang alas dan Sisi miring");
         return;
     }
 
