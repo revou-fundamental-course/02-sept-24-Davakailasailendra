@@ -75,6 +75,7 @@ body{
     border-radius: 8px;
     background-color: white;
     box-sizing: border-box;
+    margin-top: 15px;
 }
 
 /* Text alignment center untuk header sekunder */
