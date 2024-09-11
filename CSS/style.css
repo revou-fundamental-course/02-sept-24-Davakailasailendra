@@ -1,3 +1,4 @@
+/* Mengatur font, line-height, dan background color untuk keseluruhan halaman */
 body{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
@@ -8,6 +9,7 @@ body{
     padding: 0;
 }
 
+/* Styling untuk header utama dengan teks center, warna abu-abu, dan margin bawah */
 .main-header {
     text-align: center;
     background-color: gray; 
@@ -16,16 +18,19 @@ body{
     margin-bottom: 40px;
 }
 
+/* Mengatur ukuran font dan margin untuk h1 di header */
 .main-header h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
+/* Mengatur ukuran font untuk paragraf di header */
 .main-header p {
     font-size: 1.2rem;
     margin-bottom: 5px;
 }
 
+/* Layout menggunakan flexbox untuk mengatur tombol pilihan dengan jarak antar tombol */
 .selection-content {
     display: flex;
     gap: 20px;
@@ -33,6 +38,7 @@ body{
     justify-content: center;
 }
 
+/* Styling tombol pilihan dengan padding, border, dan hover effect */
 .selection-btn {
     padding: 15px 30px;
     cursor: pointer;
@@ -46,11 +52,13 @@ body{
     text-decoration: none;
 }
 
+/* Mengubah warna background dan teks */
 .selection-btn:hover {
     background-color: green;
     color: white;
 }
 
+/* Layout konten utama menggunakan flexbox, dengan jarak antar elemen */
 .main-content {
     display: flex;
     flex-wrap: wrap;
@@ -58,19 +66,23 @@ body{
     gap: 20px;
 }
 
+/* Styling untuk konten di sebelah (aside), dengan border, margin, padding, dan background putih */
 .aside-content {
     flex: 1;
-    margin: 10px;
+    margin: 0px auto;
     padding: 20px;
     border: 1px solid white;
     border-radius: 8px;
     background-color: white;
+    box-sizing: border-box;
 }
 
+/* Text alignment center untuk header sekunder */
 .secondary-header {
     text-align: center;
 }
 
+/* Styling untuk header dengan padding dan background berwarna aqua */
 .secondary-h1 {
     padding: 20px;
     border-radius: 8px;
@@ -78,11 +90,13 @@ body{
     background-color: aqua;
 }
 
+/* Layout konten luas segitiga secara vertikal (column) */
 .luas-segitiga-content {
     display: flex;
     flex-direction: column;
 }
 
+/* Gambar segitiga dengan ukuran tertentu dan posisi center */
 .luas-segitiga-img {
     width: 300px;
     height: 300px;
@@ -92,10 +106,12 @@ body{
     margin: 20px auto;
 }
 
+/* Wrapper untuk input form, dengan margin bawah */
 .input-wrapper {
     margin-bottom: 15px;
 }
 
+/* Label dan input diatur inline dengan lebar masing-masing */
 .input-wrapper > label {
     display: inline-block;
     width: 40%;
@@ -108,6 +124,7 @@ body{
     border-radius: 4px;
 }
 
+/* Styling khusus untuk input number, dengan padding dan border radius */
 input[type=number] {
     padding: 12px 20px;
     margin: 8px 0;
@@ -116,15 +133,18 @@ input[type=number] {
     box-sizing: border-box;
 }
 
+/* Styling untuk hasil perhitungan, dengan margin atas */
 .hasil-menghitung {
     margin-top: 90px;
 }
 
+/* Layout untuk container tombol, dengan jarak antar tombol */
 .button-container {
     display: flex;
     gap: 10px;
 }
 
+/* Styling tombol, dengan padding, warna background, border, dan hover effect */
 button[type=button] {
     padding: 10px 20px;
     background-color: #68a5e6;
@@ -137,10 +157,12 @@ button[type=button] {
     margin: 5px;
 }
 
+/* Hover effect untuk tombol, mengganti warna background */
 button[type=button]:hover {
     background-color: blue;
 }
 
+/* Gambar jajar genjang dengan styling yang mirip dengan segitiga */
 .luas-jajargenjang-img {
     width: 300px;
     height: 300px;
@@ -150,22 +172,11 @@ button[type=button]:hover {
     margin: 20px auto;
 }
 
+/* Media query untuk layout lebih besar dari 1024px, 768px, dan 320px. mengatur lebar maksimum konten utama */
 @media (min-width: 1024px) {
     .main-content {
         max-width: 1024px;
         margin: 0 auto;
-    }
-}
-
-@media (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .aside-content {
-        width: 100%;
-        margin-bottom: 20px;
     }
 }
 
@@ -192,5 +203,30 @@ button[type=button]:hover {
     .luas-jajargenjang-img {
         width: 90%;
         height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .aside-content {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .selection-btn {
+        padding: 15px 30px;
+        cursor: pointer;
+        width: 120px;
+        text-align: center;
+        background-color: white;
+        border: 2px solid black;
+        transition: background-color 0.3s ease;
+        font-size: 1rem;
+        font-weight: bold;
+        text-decoration: none;
     }
 }
